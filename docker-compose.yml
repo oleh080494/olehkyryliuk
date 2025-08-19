@@ -1,13 +1,13 @@
 version: '3'
 services:
   frontend:
-    build: ./client
+    build: ./client   # now uses the multi-stage Dockerfile I wrote
     ports:
-      - "80:80"
+      - "80:80"       # serve React via Nginx on standard HTTP
     restart: always
 
   backend:
     build: ./server
     ports:
-      - "8080:8080"
+      - "8080:8080"   # Express API
     restart: always
