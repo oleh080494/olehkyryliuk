@@ -1,13 +1,13 @@
-version: '3.8'
+version: '3'
 services:
   frontend:
     build: ./client
     ports:
-      - "5173:5173"
-    depends_on:
-      - backend
+      - "80:80"
+    restart: always
 
   backend:
     build: ./server
     ports:
       - "8080:8080"
+    restart: always

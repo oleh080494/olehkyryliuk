@@ -1,36 +1,20 @@
-# set the base image to create the image for react app
-FROM node:20-alpine
+# Step 1: Build React app
+FROM node:20-alpine as build
 
-# create a user with permissions to run the app
-RUN addgroup app && adduser -S -G app app
-
-# set the user to run the app
-USER app
-
-# set the working directory to /app
 WORKDIR /app
-
-# copy package.json and package-lock.json to the working directory
 COPY package*.json ./
-
-# switch to root to adjust ownership
-USER root
-RUN chown -R app:app .
-
-# switch back to app user
-USER app
-
-# install dependencies
 RUN npm install
-
-# copy the rest of the files to the working directory
 COPY . .
+RUN npm run build
 
-# expose port 5173
-EXPOSE 5173
+# Step 2: Serve with Nginx
+FROM nginx:alpine
 
-# Tell Vite what backend URL to use inside Docker
-ENV VITE_API_URL=http://olehkyryliuk:8080
+# Copy your custom nginx config
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# run dev server, binding to all interfaces
-CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
+# Copy build output to Nginx html folder
+COPY --from=build /app/dist /usr/share/nginx/html
+
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
