@@ -30,7 +30,7 @@ COPY . .
 EXPOSE 5173
 
 # Tell Vite what backend URL to use inside Docker
-ENV VITE_API_URL=http://localhost:8080
+ENV VITE_API_URL=http://olehkyryliuk:8080
 
 # run dev server, binding to all interfaces
 CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
