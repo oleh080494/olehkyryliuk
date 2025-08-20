@@ -1,15 +1,30 @@
-version: '3'
+version: '3.8'
 services:
   frontend:
-    build: ./client   # now uses the multi-stage Dockerfile I wrote
-    ports:
-      - "80:80"       # serve React via Nginx on standard HTTP
+    build: ./client
+    expose:
+      - "80"  # expose internally, no need for host port
     restart: always
 
   backend:
     build: ./server
-    ports:
-      - "8080:8080"   # Express API
+    expose:
+      - "8080"
     restart: always
 
+  caddy:
+    image: caddy:latest
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on:
+      - frontend
+      - backend
 
+volumes:
+  caddy_data:
+  caddy_config:
