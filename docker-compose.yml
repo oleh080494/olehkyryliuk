@@ -3,7 +3,9 @@ services:
   frontend:
     build: ./client
     expose:
-      - "80"  # expose internally, no need for host port
+      - "80"
+    environment:
+      - VITE_API_URL=https://olehkyryliuk.com
     restart: always
 
   backend:
