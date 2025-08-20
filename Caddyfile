@@ -1,7 +1,7 @@
 olehkyryliuk.com, www.olehkyryliuk.com {
 
-    # Backend API first
-    handle_path /api* {
+    # Backend API
+    handle /api* {
         reverse_proxy backend:8080
     }
 
