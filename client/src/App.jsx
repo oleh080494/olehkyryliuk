@@ -10,7 +10,7 @@ function App() {
     }
 
     useEffect(() => {
-        const apiUrl = import.meta.env.VITE_API_URL || "/api";
+        const apiUrl = import.meta.env.VITE_API_URL || "";
         fetch(`${apiUrl}/api`).then(
             res => res.json()
         ).then(data => {
