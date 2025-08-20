@@ -1,10 +1,10 @@
 olehkyryliuk.com, www.olehkyryliuk.com {
 
-    # React frontend
-    reverse_proxy frontend:80
-
-    # Backend API
+    # Backend API first
     handle_path /api* {
         reverse_proxy backend:8080
     }
+
+    # React frontend
+    reverse_proxy frontend:80
 }
