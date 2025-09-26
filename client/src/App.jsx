@@ -4,7 +4,7 @@ import Resume from "./subsections/resume.jsx";
 import Portfolio from "./subsections/portfolio.jsx";
 import Projects from "./subsections/projects.jsx";
 import Contact from "./subsections/contact.jsx";
-import { motion } from "motion/react"
+
 
 
 function App() {
@@ -58,8 +58,8 @@ function App() {
 
     return (
         <>
-            <div className="h-[100vh] bg-[#101010] flex flex-row">
-                <div className="flex flex-col w-[20vw] ml-[4vw]  mt-[3vh] items-center justify-center bg-[#212121] rounded-4xl">
+            <div className="h-screen-auto bg-[#101010] flex flex-row">
+                <div className="flex flex-col w-[20vw] h-[94vh] ml-[4vw]  mt-[3vh] mb-[3vh] items-center justify-center bg-[#212121] rounded-4xl">
                     <div className="ml-14 mb-7 mr-14 mt-14 flex-wrap  bg-[#393939] rounded-4xl shadow-xl">
                         <img className="m-0 p-6 object-contain" src="../public/oleh_photo.png" alt="oleh photo" />
                     </div>
@@ -108,22 +108,43 @@ function App() {
                     </div>
 
                     <div className="flex flex-row flex-wrap space-x-2 justify-center mt-auto mb-4">
-                        <img className="h-6 w-6" src="../public/facebook.png" alt="facebook" />
-                        <img className="h-6 w-6" src="../public/linkedin.png" alt="linkedin" />
-                        <img className="h-6 w-6" src="../public/instagram.png" alt="instagram" />
+                        <a
+                            href="https://www.facebook.com/share/17FZWXjmhM/?mibextid=wwXIfr"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title="Visit my Facebook"
+                        >
+                            <img className="h-6 w-6 cursor-pointer" src="../public/facebook.png" alt="facebook" />
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/oleh-kyryliuk/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title="Visit my LinkedIn"
+                        >
+                            <img className="h-6 w-6 cursor-pointer" src="../public/linkedin.png" alt="linkedin" />
+                        </a>
+                        <a
+                            href="https://www.instagram.com/kyryliuk.oleh/?igsh=MTlzNG11M2YxczA%3D&utm_source=qr#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title="Visit my Instagram"
+                        >
+                            <img className="h-6 w-6 cursor-pointer" src="../public/instagram.png" alt="instagram" />
+                        </a>
                     </div>
 
                 </div>
-                <div className="w-[70vw] mt-[3vh] ml-[2vw] bg-[#212121] rounded-4xl">
+                <div className="w-[100vw] h-auto mt-[3vh] mb-[3vh] ml-[2vw] bg-[#212121] rounded-4xl">
                     <div className="flex flex-row h-[10vh] bg-[#212121] rounded-4xl">
 
-                        <div className="text-[#FFFFFF] w-2/5 mt-7 ml-7 text-5xl animate-fadeIn">{sectionHeaders[active]}</div>
+                        <div key={active} className="text-[#FFFFFF] w-2/5 mt-7 ml-7 text-5xl animate-fadeIn">{sectionHeaders[active]}</div>
 
                         <div className="flex flex-row flex-wrap w-3/5 bg-[#2d2d2d] rounded-bl-4xl rounded-tr-4xl place-content-around items-center shadow-xl">
                             <div
                                 id="about"
                                 onClick={() => setActive("about")}
-                                className={`cursor-pointer ${
+                                className={`animate-fadeIn-section cursor-pointer ${
                                     active === "about" ? "text-[#E1AC62]" : "text-white"
                                 }`}
                             >
@@ -168,7 +189,11 @@ function App() {
                         </div>
                     </div>
                     <div className="bg-[#E1AC62] h-1.5 w-[4vw] rounded-2xl ml-7 mt-4"></div>
-                    <div id="subsections" className="m-7">{renderSection()}</div>
+                    <div id="subsections" className="m-7">
+                        <div key={active} className="animate-fadeIn">
+                            {renderSection()}
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
