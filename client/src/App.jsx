@@ -61,7 +61,7 @@ function App() {
             <div className="h-screen-auto bg-[#101010] flex flex-row">
                 <div className="flex flex-col w-[20vw] h-[94vh] ml-[4vw]  mt-[3vh] mb-[3vh] items-center justify-center bg-[#212121] rounded-4xl">
                     <div className="ml-14 mb-7 mr-14 mt-14 flex-wrap  bg-[#393939] rounded-4xl shadow-xl">
-                        <img className="m-0 p-6 object-contain" src="../public/oleh_photo.png" alt="oleh photo" />
+                        <img className="m-0 p-6 object-contain" src="/oleh_photo.png" alt="oleh photo" />
                     </div>
                     <div className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-sans text-center">Oleh Kyryliuk</div>
                     <div className="flex justify-center">
@@ -76,7 +76,7 @@ function App() {
 
                         <div className="flex items-center">
                             <div className="h-10 w-10 flex items-center justify-center rounded-md bg-[#24252e]">
-                                <img className="h-6 w-6 object-contain" src="../public/email.png" alt="email" />
+                                <img className="h-6 w-6 object-contain" src="/email.png" alt="email" />
                             </div>
                             <div className="flex flex-col ml-4">
                                 <div className="text-[#6c6c6b] text-sm">EMAIL</div>
@@ -87,7 +87,7 @@ function App() {
 
                         <div className="flex items-center">
                             <div className="h-10 w-10 flex items-center justify-center rounded-md bg-[#24252e]">
-                                <img className="h-6 w-6 object-contain" src="../public/mobile.png" alt="phone" />
+                                <img className="h-6 w-6 object-contain" src="/mobile.png" alt="phone" />
                             </div>
                             <div className="flex flex-col ml-4">
                                 <div className="text-[#6c6c6b] text-sm">PHONE</div>
@@ -98,7 +98,7 @@ function App() {
 
                         <div className="flex items-center">
                             <div className="h-10 w-10 flex items-center justify-center rounded-md bg-[#24252e]">
-                                <img className="h-6 w-6 object-contain" src="../public/calender.png" alt="birthday" />
+                                <img className="h-6 w-6 object-contain" src="/calender.png" alt="birthday" />
                             </div>
                             <div className="flex flex-col ml-4">
                                 <div className="text-[#6c6c6b] text-sm">BIRTHDAY</div>
@@ -114,7 +114,7 @@ function App() {
                             rel="noopener noreferrer"
                             title="Visit my Facebook"
                         >
-                            <img className="h-6 w-6 cursor-pointer" src="../public/facebook.png" alt="facebook" />
+                            <img className="h-6 w-6 cursor-pointer" src="/facebook.png" alt="facebook" />
                         </a>
                         <a
                             href="https://www.linkedin.com/in/oleh-kyryliuk/"
@@ -122,7 +122,7 @@ function App() {
                             rel="noopener noreferrer"
                             title="Visit my LinkedIn"
                         >
-                            <img className="h-6 w-6 cursor-pointer" src="../public/linkedin.png" alt="linkedin" />
+                            <img className="h-6 w-6 cursor-pointer" src="/linkedin.png" alt="linkedin" />
                         </a>
                         <a
                             href="https://www.instagram.com/kyryliuk.oleh/?igsh=MTlzNG11M2YxczA%3D&utm_source=qr#"
@@ -130,7 +130,7 @@ function App() {
                             rel="noopener noreferrer"
                             title="Visit my Instagram"
                         >
-                            <img className="h-6 w-6 cursor-pointer" src="../public/instagram.png" alt="instagram" />
+                            <img className="h-6 w-6 cursor-pointer" src="/instagram.png" alt="instagram" />
                         </a>
                     </div>
 
