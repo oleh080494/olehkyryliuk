@@ -14,7 +14,7 @@ function About() {
             <div className="flex flex-row space-x-4" >
                 <div className="flex items-center w-full justify-center h-[15vh] bg-[#2d2d2d] rounded-2xl shadow-xl">
                     <div className="h-15 w-15 flex items-center justify-center rounded-md bg-[#24252e]">
-                        <img className="h-10 w-10 object-contain" src="../public/web-design.png" alt="email" />
+                        <img className="h-10 w-10 object-contain" src="/web-design.png" alt="email" />
                     </div>
                     <div className="flex flex-col ml-4">
                         <div className=" text-[#FFFFFF] text-sm">Web Design</div>
@@ -23,7 +23,7 @@ function About() {
                 </div>
                 <div className="flex items-center w-full justify-center h-[15vh] bg-[#2d2d2d] rounded-2xl shadow-xl">
                     <div className="h-15 w-15 flex items-center justify-center rounded-md bg-[#24252e]">
-                        <img className="h-10 w-10 object-contain" src="../public/web-development.png" alt="email" />
+                        <img className="h-10 w-10 object-contain" src="/web-development.png" alt="email" />
                     </div>
                     <div className="flex flex-col ml-4">
                         <div className="text-[#FFFFFF] text-sm">Web Development</div>

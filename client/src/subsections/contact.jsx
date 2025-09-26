@@ -4,7 +4,7 @@ import "leaflet/dist/leaflet.css";
 
 function Contact() {
     var myIcon = L.icon({
-        iconUrl: '../public/home.png',
+        iconUrl: '/home.png',
         iconSize: [50, 50],
         iconAnchor: [15, 15],
         popupAnchor: [0, 0]

@@ -59,7 +59,7 @@ function Resume() {
                 <div className="h-10 w-10 flex items-center justify-center rounded-md bg-[#24252e]">
                     <img
                         className="h-6 w-6"
-                        src="../public/education.png"
+                        src="/education.png"
                         alt="education"
                     />
                 </div>
