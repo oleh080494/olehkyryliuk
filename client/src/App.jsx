@@ -59,13 +59,13 @@ function App() {
     return (
         <>
             <div className="h-screen-auto bg-[#101010] flex flex-row">
-                <div className="flex flex-col w-[20vw] h-[94vh] ml-[4vw]  mt-[3vh] mb-[3vh] items-center justify-center bg-[#212121] rounded-4xl">
-                    <div className="ml-14 mb-7 mr-14 mt-14 flex-wrap  bg-[#393939] rounded-4xl shadow-xl">
+                <div className="flex flex-col w-[20vw] h-[94vh]   mt-[3vh] mb-[3vh] items-center justify-center bg-[#212121] rounded-3xl">
+                    <div className="ml-14 mb-7 mr-14 mt-14 flex-wrap  bg-[#393939] rounded-3xl shadow-xl">
                         <img className="m-0 p-6 object-contain" src="/oleh_photo.png" alt="oleh photo" />
                     </div>
                     <div className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-sans text-center">Oleh Kyryliuk</div>
                     <div className="flex justify-center">
-                        <div className=" bg-[#393939] mt-6 rounded-4xl inline-block px-4 py-2 shadow-xl">
+                        <div className=" bg-[#393939] mt-6 rounded-3xl inline-block px-4 py-2 shadow-xl">
                             <h3 className="text-[#FFFFFF]">Web Developer</h3>
                         </div>
                     </div>
@@ -135,7 +135,7 @@ function App() {
                     </div>
 
                 </div>
-                <div className="w-[100vw] h-auto mt-[3vh] mb-[3vh] ml-[2vw] bg-[#212121] rounded-4xl">
+                <div className="flex-1 h-auto mt-[3vh] mb-[3vh] ml-[2vw] bg-[#212121] rounded-3xl">
                     <div className="flex flex-row h-[10vh] bg-[#212121] rounded-4xl">
 
                         <div key={active} className="text-[#FFFFFF] w-2/5 mt-7 ml-7 text-5xl animate-fadeIn">{sectionHeaders[active]}</div>
