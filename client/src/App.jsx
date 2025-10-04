@@ -136,7 +136,7 @@ function App() {
 
                 </div>
                 <div className="flex-1 h-auto mt-[3vh] mb-[3vh] ml-[2vw] bg-[#212121] rounded-3xl">
-                    <div className="flex flex-row h-[10vh] bg-[#212121] rounded-4xl">
+                    <div className="flex flex-row h-[10vh] bg-[#212121] rounded-3xl">
 
                         <div key={active} className="text-[#FFFFFF] w-2/5 mt-7 ml-7 text-5xl animate-fadeIn">{sectionHeaders[active]}</div>
 

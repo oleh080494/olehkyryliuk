@@ -23,7 +23,10 @@ function Contact() {
         L.marker([56.185863, 10.213092], {icon: myIcon}).addTo(map).bindPopup("Home sweat home!!!  Kongevellen 19, 8240 Risskov");
     }, []);
 
-    return <div id="map" className="rounded-4xl" style={{ height: "400px", width: "100%" }} />;
+    return <div>
+        <div id="map" className="rounded-4xl" style={{ height: "400px", width: "100%" }} />;
+        <h3 className="text-white text-3xl">Kongevellen 19, 8240 Risskov</h3>
+    </div>
 }
 
 export default Contact;
