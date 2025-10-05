@@ -16,7 +16,7 @@ function Portfolio() {
     return (
         <div className="p-4">
             {/* Tabs */}
-            <div className="flex flex-row gap-4 justify-center mb-6">
+            <div className="flex flex-row gap-4 justify-start mb-6 flex-wrap">
                 {["All", "Hardware", "Software"].map(tab => (
                     <div
                         key={tab}
@@ -31,17 +31,18 @@ function Portfolio() {
             </div>
 
             {/* Projects Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-center animate-fadeIn">
                 {filteredProjects.map(p => (
                     <a
                         key={p.id}
                         href={p.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-full"
+                        className="flex justify-center"
                         title={p.alt}
                     >
-                        <div className="aspect-w-4 aspect-h-3">
+                        {/* Scale images: smaller on desktop, slightly smaller on mobile */}
+                        <div className="w-4/5 sm:w-full md:w-3/4 md:aspect-square">
                             <img
                                 className="w-full h-full object-cover rounded-3xl transition duration-300 ease-in-out hover:brightness-50 hover:scale-110 border-1 border-[#E1AC62]"
                                 src={p.img}

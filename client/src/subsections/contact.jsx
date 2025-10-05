@@ -24,7 +24,7 @@ function Contact() {
     }, []);
 
     return <div>
-        <div id="map" className="rounded-4xl" style={{ height: "400px", width: "100%" }} />;
+        <div id="map" className="rounded-4xl mt-7" style={{ height: "400px", width: "100%" }} />;
         <h3 className="text-white text-3xl">Kongevellen 19, 8240 Risskov</h3>
     </div>
 }

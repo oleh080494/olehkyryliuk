@@ -27,7 +27,7 @@ function About() {
                     </div>
                     <div className="flex flex-col ml-4">
                         <div className="text-[#FFFFFF] text-sm">Web Development</div>
-                        <div className="text-[#6c6c6b] text-base">High quality development of<br/> sites at the professional level</div>
+                        <div className="text-[#6c6c6b] text-base">High quality development of<br/> sites websites</div>
                     </div>
                 </div>
             </div>

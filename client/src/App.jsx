@@ -35,11 +35,11 @@ function App() {
     }, []);
 
     return (
-        <div className="min-h-screen bg-[#101010] flex flex-col md:flex-row">
+        <div className="min-h-screen bg-[#101010] flex flex-col md:flex-row md:p-9">
             {/* Sidebar */}
-            <div className="flex flex-col w-full md:w-[20vw] h-auto md:h-[94vh] mt-3 mb-3 items-center justify-start md:justify-center bg-[#212121] rounded-3xl p-4 md:p-0">
+            <div className="flex flex-col w-full md:w-[20vw] h-auto md:h-[94vh] mb-6 items-center justify-start md:justify-center bg-[#212121] rounded-3xl p-4 md:p-0">
                 {/* Profile */}
-                <div className="ml-0 md:ml-14 mb-4 mt-4 w-full md:w-auto flex justify-center bg-[#393939] rounded-3xl shadow-xl p-4">
+                <div className="mt-6 md:m-6 md:w-auto flex justify-center bg-[#393939] rounded-3xl shadow-xl p-4">
                     <img
                         className="object-contain w-32 h-32 md:w-auto md:h-auto rounded-full"
                         src="/oleh_photo.png"
@@ -89,11 +89,19 @@ function App() {
             </div>
 
             {/* Main content */}
-            <div className="flex-1 h-auto mt-3 mb-3 md:ml-2 bg-[#212121] rounded-3xl p-4 md:p-6">
+            <div className="flex-1 h-auto mb-3 md:ml-6 bg-[#212121] rounded-3xl p-4 md:p-0">
                 {/* Navigation bar + Header */}
                 <div className="flex flex-col md:flex-row w-full h-auto bg-[#212121] rounded-3xl">
+                    {/* Section header */}
+                    <div
+                        key={active}
+                        className="order-2 md:order-1 md:ml-7  text-white w-full md:w-2/5 mt-3 md:mt-4 text-2xl sm:text-3xl md:text-5xl text-start md:text-left animate-fadeIn"
+                    >
+                        {sectionHeaders[active]}
+                    </div>
+
                     {/* Navigation bar */}
-                    <div className="flex flex-row flex-nowrap justify-around items-center w-full md:w-3/5 bg-[#2d2d2d] rounded-t-3xl md:rounded-tr-4xl md:rounded-bl-none py-3 px-2 md:px-0">
+                    <div className="order-1 md:order-2 flex flex-row flex-nowrap justify-around items-center w-full bg-[#2d2d2d] rounded-t-3xl py-3 px-2 md:px-0">
                         {["about", "resume", "portfolio", "projects", "contact"].map((sec, idx) => (
                             <div
                                 key={idx}
@@ -105,11 +113,6 @@ function App() {
                                 {sec === "projects" ? "Skills" : sec.charAt(0).toUpperCase() + sec.slice(1)}
                             </div>
                         ))}
-                    </div>
-
-                    {/* Section header */}
-                    <div key={active} className="text-white w-full md:w-2/5 mt-3 md:mt-0 text-2xl sm:text-3xl md:text-5xl text-start md:text-left animate-fadeIn">
-                        {sectionHeaders[active]}
                     </div>
                 </div>
 
