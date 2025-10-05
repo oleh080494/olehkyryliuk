@@ -35,7 +35,7 @@ function App() {
     }, []);
 
     return (
-        <div className="min-h-screen bg-[#101010] flex flex-col md:flex-row md:p-9">
+        <div className="min-h-screen bg-[#101010] flex flex-col md:flex-row p-4 md:p-9">
             {/* Sidebar */}
             <div className="flex flex-col w-full md:w-[20vw] h-auto md:h-[94vh] mb-6 items-center justify-start md:justify-center bg-[#212121] rounded-3xl p-4 md:p-0">
                 {/* Profile */}
