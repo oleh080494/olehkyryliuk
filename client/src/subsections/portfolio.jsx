@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 function Portfolio() {
-    const [activeTab, setActiveTab] = useState("Hardware");
+    const [activeTab, setActiveTab] = useState("All");
 
     const projects = [
         {id:1, category: "Hardware", alt: "visual diet tracker", img: "/visual_diet_tracker.png", link: "https://drive.google.com/file/d/1pYqdof5k6dPHiXI2xgudb8Sxv0AiDU0j/view?usp=drive_link"},
