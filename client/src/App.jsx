@@ -6,24 +6,17 @@ import Projects from "./subsections/projects.jsx";
 import Contact from "./subsections/contact.jsx";
 
 function App() {
-    const [number, setNumber] = useState(0);
     const [backendData, setBackendData] = useState({});
     const [active, setActive] = useState("about");
 
     function renderSection() {
         switch (active) {
-            case "about":
-                return <About />;
-            case "resume":
-                return <Resume />;
-            case "portfolio":
-                return <Portfolio />;
-            case "projects":
-                return <Projects />;
-            case "contact":
-                return <Contact />;
-            default:
-                return <About />;
+            case "about": return <About />;
+            case "resume": return <Resume />;
+            case "portfolio": return <Portfolio />;
+            case "projects": return <Projects />;
+            case "contact": return <Contact />;
+            default: return <About />;
         }
     }
 
@@ -38,16 +31,14 @@ function App() {
     useEffect(() => {
         fetch("/api")
             .then(res => res.json())
-            .then(data => {
-                console.log(data);
-                setBackendData(data);
-            });
+            .then(data => setBackendData(data));
     }, []);
 
     return (
         <div className="min-h-screen bg-[#101010] flex flex-col md:flex-row">
             {/* Sidebar */}
             <div className="flex flex-col w-full md:w-[20vw] h-auto md:h-[94vh] mt-3 mb-3 items-center justify-start md:justify-center bg-[#212121] rounded-3xl p-4 md:p-0">
+                {/* Profile */}
                 <div className="ml-0 md:ml-14 mb-4 mt-4 w-full md:w-auto flex justify-center bg-[#393939] rounded-3xl shadow-xl p-4">
                     <img
                         className="object-contain w-32 h-32 md:w-auto md:h-auto rounded-full"
@@ -64,8 +55,8 @@ function App() {
 
                 <div className="mt-4 md:mt-8 w-4/5 bg-[#393939] h-1 rounded-2xl"></div>
 
+                {/* Contact info */}
                 <div className="flex flex-col space-y-4 mt-4 md:mt-5 w-full">
-                    {/* Contact info */}
                     {[
                         { icon: "/email.png", label: "EMAIL", value: "kyryliyk@gmail.com" },
                         { icon: "/mobile.png", label: "PHONE", value: "+45 42 31 75 62" },
@@ -83,6 +74,7 @@ function App() {
                     ))}
                 </div>
 
+                {/* Social icons */}
                 <div className="flex flex-row flex-wrap space-x-2 justify-center mt-4 md:mt-auto mb-4">
                     {[
                         { link: "https://www.facebook.com/share/17FZWXjmhM/?mibextid=wwXIfr", icon: "/facebook.png", title: "Facebook" },
@@ -98,21 +90,26 @@ function App() {
 
             {/* Main content */}
             <div className="flex-1 h-auto mt-3 mb-3 md:ml-2 bg-[#212121] rounded-3xl p-4 md:p-6">
-                {/* Header + Navigation */}
-                <div className="flex flex-col md:flex-row h-auto md:h-[10vh] bg-[#212121] rounded-3xl">
-                    <div key={active} className="text-white w-full md:w-2/5 mt-2 md:mt-7 text-2xl sm:text-3xl md:text-5xl animate-fadeIn">{sectionHeaders[active]}</div>
-                    <div className="flex flex-row flex-wrap w-full md:w-3/5 bg-[#2d2d2d] rounded-bl-4xl rounded-tr-4xl place-content-around items-center shadow-xl mt-2 md:mt-0">
+                {/* Navigation bar + Header */}
+                <div className="flex flex-col md:flex-row w-full h-auto bg-[#212121] rounded-3xl">
+                    {/* Navigation bar */}
+                    <div className="flex flex-row flex-nowrap justify-around items-center w-full md:w-3/5 bg-[#2d2d2d] rounded-t-3xl md:rounded-tr-4xl md:rounded-bl-none py-3 px-2 md:px-0">
                         {["about", "resume", "portfolio", "projects", "contact"].map((sec, idx) => (
                             <div
                                 key={idx}
                                 onClick={() => setActive(sec)}
-                                className={`cursor-pointer px-2 py-1 md:px-4 md:py-2 text-sm sm:text-base md:text-lg ${
+                                className={`cursor-pointer px-2 py-1 sm:px-3 sm:py-2 md:px-4 md:py-2 text-xs sm:text-sm md:text-lg ${
                                     active === sec ? "text-[#E1AC62]" : "text-white"
                                 }`}
                             >
                                 {sec === "projects" ? "Skills" : sec.charAt(0).toUpperCase() + sec.slice(1)}
                             </div>
                         ))}
+                    </div>
+
+                    {/* Section header */}
+                    <div key={active} className="text-white w-full md:w-2/5 mt-3 md:mt-0 text-2xl sm:text-3xl md:text-5xl text-start md:text-left animate-fadeIn">
+                        {sectionHeaders[active]}
                     </div>
                 </div>
 
