@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import About from "./subsections/about.jsx";
 import Resume from "./subsections/resume.jsx";
 import Portfolio from "./subsections/portfolio.jsx";
-import Projects from "./subsections/projects.jsx";
+import Skills from "./subsections/skills.jsx";
 import Contact from "./subsections/contact.jsx";
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
             case "about": return <About />;
             case "resume": return <Resume />;
             case "portfolio": return <Portfolio />;
-            case "projects": return <Projects />;
+            case "skills": return <Skills />;
             case "contact": return <Contact />;
             default: return <About />;
         }
@@ -24,7 +24,7 @@ function App() {
         about: "About",
         resume: "Resume",
         portfolio: "Portfolio",
-        projects: "Skills",
+        skills: "Skills",
         contact: "Contact"
     };
 
@@ -102,7 +102,7 @@ function App() {
 
                     {/* Navigation bar */}
                     <div className="order-1 md:order-2 flex flex-row flex-nowrap justify-around items-center w-full bg-[#2d2d2d] rounded-t-3xl py-3 px-2 md:px-0">
-                        {["about", "resume", "portfolio", "projects", "contact"].map((sec, idx) => (
+                        {["about", "resume", "portfolio", "skills", "contact"].map((sec, idx) => (
                             <div
                                 key={idx}
                                 onClick={() => setActive(sec)}
@@ -110,7 +110,7 @@ function App() {
                                     active === sec ? "text-[#E1AC62]" : "text-white"
                                 }`}
                             >
-                                {sec === "projects" ? "Skills" : sec.charAt(0).toUpperCase() + sec.slice(1)}
+                                {sec === "skills" ? "Skills" : sec.charAt(0).toUpperCase() + sec.slice(1)}
                             </div>
                         ))}
                     </div>

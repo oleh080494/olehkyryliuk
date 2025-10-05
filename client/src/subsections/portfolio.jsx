@@ -30,7 +30,7 @@ function Portfolio() {
                 ))}
             </div>
 
-            {/* Projects Grid */}
+            {/* Skills Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-center animate-fadeIn">
                 {filteredProjects.map(p => (
                     <a
@@ -41,10 +41,10 @@ function Portfolio() {
                         className="flex justify-center"
                         title={p.alt}
                     >
-                        {/* Scale images: smaller on desktop, slightly smaller on mobile */}
-                        <div className="w-4/5 sm:w-full md:w-3/4 md:aspect-square">
+                        {/* Square container for uniform sizes */}
+                        <div className="w-4/5 sm:w-full md:w-3/4 aspect-square">
                             <img
-                                className="w-full h-full object-cover rounded-3xl transition duration-300 ease-in-out hover:brightness-50 hover:scale-110 border-1 border-[#E1AC62]"
+                                className="w-full h-full object-cover rounded-3xl transition duration-300 ease-in-out hover:brightness-50 hover:scale-110 border border-[#E1AC62]"
                                 src={p.img}
                                 alt={p.alt}
                             />
