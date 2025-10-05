@@ -175,7 +175,7 @@ function App() {
                                     active === "projects" ? "text-[#E1AC62]" : "text-white"
                                 }`}
                             >
-                                Projects
+                                Skills
                             </div>
                             <div
                                 id="contact"

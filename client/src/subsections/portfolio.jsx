@@ -4,12 +4,12 @@ function Portfolio() {
     const [activeTab, setActiveTab] = useState("Hardware");
 
     const projects = [
-        {id:1, category: "Hardware", img: "/visual_diet_tracker.png", link: "https://drive.google.com/file/d/1pYqdof5k6dPHiXI2xgudb8Sxv0AiDU0j/view?usp=drive_link"},
-        {id:2, category: "Hardware", img: "/dragon_slayer.png", link: "https://drive.google.com/file/d/1WGpYwqvyskQs4KaZ7KDyhMlBvulqCyEB/view?usp=drive_link"},
-        {id:3, category: "Hardware", img: "/interactive_lamp.png", link: "https://drive.google.com/file/d/1cwS4NTWL1y6UdeUrmgpy0Q85i6eL37wU/view?usp=drive_link"},
-        {id:4, category: "Hardware", img: "/interactive_lamp.png", link: "https://drive.google.com/file/d/1cwS4NTWL1y6UdeUrmgpy0Q85i6eL37wU/view?usp=drive_link"},
-        {id:5, category: "Hardware", img: "/interactive_lamp.png", link: "https://drive.google.com/file/d/1cwS4NTWL1y6UdeUrmgpy0Q85i6eL37wU/view?usp=drive_link"},
-        {id:6, category: "Hardware", img: "/interactive_lamp.png", link: "https://drive.google.com/file/d/1cwS4NTWL1y6UdeUrmgpy0Q85i6eL37wU/view?usp=drive_link"},
+        {id:1, category: "Hardware", alt: "visual diet tracker", img: "/visual_diet_tracker.png", link: "https://drive.google.com/file/d/1pYqdof5k6dPHiXI2xgudb8Sxv0AiDU0j/view?usp=drive_link"},
+        {id:2, category: "Hardware", alt: "dragon slayer", img: "/dragon_slayer.png", link: "https://drive.google.com/file/d/1WGpYwqvyskQs4KaZ7KDyhMlBvulqCyEB/view?usp=drive_link"},
+        {id:3, category: "Hardware", alt: "interactive lamp", img: "/interactive_lamp.png", link: "https://drive.google.com/file/d/1cwS4NTWL1y6UdeUrmgpy0Q85i6eL37wU/view?usp=drive_link"},
+        {id:4, category: "Software", alt: "aarhus kommune", img: "/aarhus_kommune.png", link: "https://drive.google.com/file/d/1pt7lDjj0Ujz1Ey8RvTM8dxw1dq-VnZ_x/view?usp=drive_link"},
+        {id:5, category: "Software", alt: "website portfolio", img: "/website_portfolio.png", link: "https://olehkyryliuk.com/"},
+
     ]
     return (
         <>
@@ -30,7 +30,7 @@ function Portfolio() {
                     Hardware
                 </div>
                 <div
-                    id="hardware"
+                    id="software"
                     onClick={()=>setActiveTab("Software")}
                     className={`animate-fadeIn ${activeTab === "Software" ? "text-[#E1AC62]" : "text-white"} cursor-pointer`}
                 >
@@ -39,94 +39,65 @@ function Portfolio() {
             </div>
 
             {activeTab === "All" && (
-                <div className="flex flex-wrap justify-around m-7">
-                    <a
-                        href="https://drive.google.com/file/d/1pYqdof5k6dPHiXI2xgudb8Sxv0AiDU0j/view?usp=drive_link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        title="Click to see the project"
-                        className="basis-3/5 sm:basis-1/3 md:basis-1/4 aspect-square"
-                    >
-                        <img
-                            className="w-full h-full rounded-3xl transition duration-300 ease-in-out hover:brightness-50 hover:scale-110"
-                            src="/visual_diet_tracker.png"
-                            alt="visual_diet_tracker"
-                        />
-                    </a>
-
-                    <a
-                        href="https://drive.google.com/file/d/1WGpYwqvyskQs4KaZ7KDyhMlBvulqCyEB/view?usp=drive_link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        title="Click to see the project"
-                        className="basis-3/5 sm:basis-1/3 md:basis-1/4 aspect-square"
-                    >
-                        <img
-                            className="w-full h-full rounded-3xl transition duration-300 ease-in-out hover:brightness-50 hover:scale-110"
-                            src="/dragon_slayer.png"
-                            alt="dragon_slayer"
-                        />
-                    </a>
-
-                    <a
-                        href="https://drive.google.com/file/d/1cwS4NTWL1y6UdeUrmgpy0Q85i6eL37wU/view?usp=drive_link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        title="Click to see the project"
-                        className="basis-3/5 sm:basis-1/3 md:basis-1/4 aspect-square"
-                    >
-                        <img
-                            className="w-full h-full rounded-3xl transition duration-300 ease-in-out hover:brightness-50 hover:scale-110"
-                            src="/interactive_lamp.png"
-                            alt="interactive_lamp"
-                        />
-                    </a>
+                <div className="flex flex-wrap m-7">
+                    {projects.map(p => (
+                        <a
+                            key={p.id}
+                            href={p.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="basis-1/3 p-4"
+                            title={p.alt}
+                        >
+                            <img
+                                className="w-full h-full rounded-3xl transition duration-300 ease-in-out hover:brightness-50 hover:scale-110 border-1 border-[#E1AC62] animate-fadeIn"
+                                src={p.img}
+                                alt={p.alt}
+                            />
+                        </a>
+                    ))}
                 </div>
             )}
 
             {activeTab === "Hardware" && (
-                <div className="flex flex-wrap justify-around m-7">
-                    <a
-                        href="https://drive.google.com/file/d/1pYqdof5k6dPHiXI2xgudb8Sxv0AiDU0j/view?usp=drive_link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        title="Click to see the project"
-                        className="basis-3/5 sm:basis-1/3 md:basis-1/4 aspect-square"
-                    >
-                        <img
-                            className="w-full h-full rounded-3xl transition duration-300 ease-in-out hover:brightness-50 hover:scale-110"
-                            src="/visual_diet_tracker.png"
-                            alt="visual_diet_tracker"
-                        />
-                    </a>
+                <div className="flex flex-wrap justify-start m-7">
+                    {projects.filter(p => p.category === activeTab)
+                        .map((p) => (
+                            <a
+                                key={p.id}
+                                href={p.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="basis-1/3 p-4"
+                            >
+                                <img
+                                    className="w-full h-full rounded-3xl transition duration-300 ease-in-out hover:brightness-50 hover:scale-110 border-1 border-[#E1AC62] animate-fadeIn"
+                                    src={p.img}
+                                    alt={p.alt}
+                                />
+                            </a>
+                        ))}
+                </div>
+            )}
 
-                    <a
-                        href="https://drive.google.com/file/d/1WGpYwqvyskQs4KaZ7KDyhMlBvulqCyEB/view?usp=drive_link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        title="Click to see the project"
-                        className="basis-3/5 sm:basis-1/3 md:basis-1/4 aspect-square"
-                    >
-                        <img
-                            className="w-full h-full rounded-3xl transition duration-300 ease-in-out hover:brightness-50 hover:scale-110"
-                            src="/dragon_slayer.png"
-                            alt="dragon_slayer"
-                        />
-                    </a>
-
-                    <a
-                        href="https://drive.google.com/file/d/1cwS4NTWL1y6UdeUrmgpy0Q85i6eL37wU/view?usp=drive_link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        title="Click to see the project"
-                        className="basis-3/5 sm:basis-1/3 md:basis-1/4 aspect-square"
-                    >
-                        <img
-                            className="w-full h-full rounded-3xl transition duration-300 ease-in-out hover:brightness-50 hover:scale-110"
-                            src="/interactive_lamp.png"
-                            alt="interactive_lamp"
-                        />
-                    </a>
+            {activeTab === "Software" && (
+                <div className="flex flex-wrap justify-start m-7">
+                    {projects.filter(p => p.category === activeTab)
+                        .map((p) => (
+                            <a
+                                key={p.id}
+                                href={p.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="flex-none w-1/3 p-4"
+                            >
+                                <img
+                                    className="w-full h-full rounded-3xl transition duration-300 ease-in-out hover:brightness-50 hover:scale-110 border-1 border-[#E1AC62] animate-fadeIn"
+                                    src={p.img}
+                                    alt={p.alt}
+                                />
+                            </a>
+                        ))}
                 </div>
             )}
 
