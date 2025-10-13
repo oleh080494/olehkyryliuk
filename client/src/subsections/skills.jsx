@@ -1,6 +1,9 @@
 // skills.jsx
 import React from "react";
 import { FaLaptopCode, FaLightbulb } from "react-icons/fa";
+import { FaArrowRotateLeft} from "react-icons/fa6";
+
+
 
 function Skills() {
     const technicalSkills = [

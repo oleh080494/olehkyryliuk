@@ -5,6 +5,10 @@ import Portfolio from "./subsections/portfolio.jsx";
 import Skills from "./subsections/skills.jsx";
 import Contact from "./subsections/contact.jsx";
 
+
+const endpoint = "olehkyryliuk.c9g2as68ewx6.eu-north-1.rds.amazonaws.com"
+const port = "5432"
+
 function App() {
     const [backendData, setBackendData] = useState({});
     const [active, setActive] = useState("about");
@@ -101,7 +105,7 @@ function App() {
                     </div>
 
                     {/* Navigation bar */}
-                    <div className="order-1 md:order-2 flex flex-row flex-nowrap justify-around items-center w-full bg-[#2d2d2d] rounded-t-3xl py-3 px-2 md:px-0">
+                    <div className="order-1 md:order-2 flex flex-row flex-nowrap justify-around items-center w-full bg-[#2d2d2d] rounded-tr-3xl rounded-bl-3xl py-3 px-2 md:px-0">
                         {["about", "resume", "portfolio", "skills", "contact"].map((sec, idx) => (
                             <div
                                 key={idx}
