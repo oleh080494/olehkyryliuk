@@ -22,7 +22,7 @@ function Portfolio() {
                         key={tab}
                         onClick={() => setActiveTab(tab)}
                         className={`cursor-pointer px-3 py-1 rounded-md transition-colors duration-200 ${
-                            activeTab === tab ? "text-[#E1AC62] bg-[#2d2d2d]" : "text-white hover:text-[#E1AC62]"
+                            activeTab === tab ? "text-[#E1AC62] bg-[#2d2d2d] animate-fadeIn" : "text-white hover:bg-[#393939] hover:rounded-2xl"
                         }`}
                     >
                         {tab}

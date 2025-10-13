@@ -111,7 +111,7 @@ function App() {
                                 key={idx}
                                 onClick={() => setActive(sec)}
                                 className={`cursor-pointer px-2 py-1 sm:px-3 sm:py-2 md:px-4 md:py-2 text-xs sm:text-sm md:text-lg ${
-                                    active === sec ? "text-[#E1AC62]" : "text-white"
+                                    active === sec ? "text-[#E1AC62] bg-[#212121] rounded-md animate-fadeIn" : "text-white hover:bg-[#393939] hover:rounded-2xl " 
                                 }`}
                             >
                                 {sec === "skills" ? "Skills" : sec.charAt(0).toUpperCase() + sec.slice(1)}

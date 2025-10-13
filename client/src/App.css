@@ -6,7 +6,7 @@
 }
 
 .animate-fadeIn {
-    animation: fadeIn 0.3s ease-in-out forwards;
+    animation: fadeIn 1s ease-in-out forwards;
 }
 
 
