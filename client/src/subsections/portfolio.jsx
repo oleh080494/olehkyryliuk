@@ -9,6 +9,7 @@ function Portfolio() {
         {id:3, category: "Hardware", alt: "interactive lamp", img: "/interactive_lamp.png", link: "https://drive.google.com/file/d/1cwS4NTWL1y6UdeUrmgpy0Q85i6eL37wU/view?usp=drive_link"},
         {id:4, category: "Software", alt: "aarhus kommune", img: "/aarhus_kommune.png", link: "https://drive.google.com/file/d/1pt7lDjj0Ujz1Ey8RvTM8dxw1dq-VnZ_x/view?usp=drive_link"},
         {id:5, category: "Software", alt: "website portfolio", img: "/website_portfolio.png", link: "https://olehkyryliuk.com/"},
+        {id:6, category: "Software", alt: "bachelor project", img: "/spotify_game.png", link: "https://drive.google.com/file/d/1TRNKl1nmHqClFdDWav1egwuJZtfDlAwO/view?usp=drive_link"},
     ];
 
     const filteredProjects = activeTab === "All" ? projects : projects.filter(p => p.category === activeTab);
