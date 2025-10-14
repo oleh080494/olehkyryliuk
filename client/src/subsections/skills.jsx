@@ -44,7 +44,7 @@ function Skills() {
                 className="flex items-center bg-[#2d2d2d] text-white px-4 py-3 rounded-xl shadow-lg hover:bg-[#393939] transition transform hover:scale-105 cursor-pointer"
                 onClick={()=> setSelectedItem({title, description})}
             >
-                <span className="text-[#E1AC62] mr-3">•</span>
+
                 {title}
             </li>
         ));
