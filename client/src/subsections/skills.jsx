@@ -1,12 +1,11 @@
 // skills.jsx
 import React, {useState} from "react";
 import { FaLaptopCode, FaLightbulb } from "react-icons/fa";
-import { FaArrowRotateLeft} from "react-icons/fa6";
 
 
 
 function Skills() {
-    const [selectedItem, setSelectedItem] = useState([])
+    const [selectedItem, setSelectedItem] = useState(null)
 
     const technicalSkills = [
         ["Java, JavaScript, Python, C, C++", "Used Java for writing a simple game and tests for it. JavaScript was used for web development as well as Python. C and C++ were used for programming Arduino."],
