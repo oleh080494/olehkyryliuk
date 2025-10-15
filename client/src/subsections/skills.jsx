@@ -8,16 +8,17 @@ function Skills() {
     const [selectedItem, setSelectedItem] = useState(null)
 
     const technicalSkills = [
-        ["Java, JavaScript, Python, C, C++", "Used Java for writing a simple game and tests for it. JavaScript was used for web development as well as Python. C and C++ were used for programming Arduino."],
-        ["Web technologies (HTML, CSS, React, Firebase, REST APIs)", "Built responsive web apps using React and Firebase, connecting frontends to backends through REST APIs."],
+        ["Arduino, sensors, actuators, and physical computing", "Created interactive prototypes combining sensors and actuators with Arduino microcontrollers."],
+        ["C, C++", "C and C++ were used for programming Arduino to the projects at the university."],
+        ["3D modeling & rapid prototyping", "Designed and fabricated physical components using CAD tools and 3D printing for fast iteration."],
+        ["Agile project management & iterative prototyping", "Worked in sprints with regular stand-ups, retrospectives, and continuous feedback cycles."],
+        ["Java", "Used Java and its most common patterns (Abstract Factory, Adapter, Decorator, Facade, Proxy, State, Strategy, Observer) for writing a simple game and used JUnit testing to ensure stable and correct functioning of the system."],
+        ["Web technologies (HTML, CSS -> Tailwind, JavaScript -> React + Node.js, REST APIs)", "Built responsive web apps using React and Firebase, connecting frontends to backends through REST APIs either alone or in a small group"],
         ["Distributed systems, algorithms, and data structures", "Studied and implemented distributed algorithms, focusing on efficiency, scalability, and fault tolerance."],
         ["Client-server architecture, peer-to-peer networks", "Developed systems communicating through both centralized and decentralized network topologies."],
         ["Database design and management (mySQL, NoSQL, Firebase)", "Designed relational and non-relational databases, handled queries, and managed data synchronization in Firebase."],
         ["Software security (RSA, AES, cryptography basics)", "Implemented encryption, decryption, and digital signatures to secure data in Go-based projects."],
         ["User-centered design methods & usability testing", "Applied design thinking, conducted user testing, and iteratively improved interfaces based on feedback."],
-        ["Arduino, sensors, actuators, and physical computing", "Created interactive prototypes combining sensors and actuators with Arduino microcontrollers."],
-        ["3D modeling & rapid prototyping", "Designed and fabricated physical components using CAD tools and 3D printing for fast iteration."],
-        ["Agile/Scrum project management & iterative prototyping", "Worked in sprints with regular stand-ups, retrospectives, and continuous feedback cycles."],
         ["Git/GitHub version control", "Used Git and GitHub for collaborative coding, managing branches, and handling version history."],
         ["Figma, Adobe, interface design", "Designed interactive prototypes and user interfaces using Figma and Adobe tools."],
         ["Docker containerization and deployment on a Hetzner VPS", "Deployed full-stack applications using Docker containers hosted on a Hetzner virtual private server."],
