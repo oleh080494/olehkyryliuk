@@ -53,7 +53,7 @@ function App() {
                 <div className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-sans text-center mt-2">Oleh Kyryliuk</div>
                 <div className="flex justify-center mt-2 md:mt-6">
                     <div className="bg-[#393939] rounded-3xl px-4 py-2 shadow-xl">
-                        <h3 className="text-white text-sm sm:text-base md:text-lg">Web Developer</h3>
+                        <h3 className="text-white text-sm sm:text-base md:text-lg">Web and Physical <br/>Product Developer</h3>
                     </div>
                 </div>
 
