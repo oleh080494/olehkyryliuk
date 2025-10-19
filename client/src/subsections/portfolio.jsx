@@ -4,7 +4,7 @@ function Portfolio() {
     const [activeTab, setActiveTab] = useState("All");
 
     const projects = [
-        {id:1, category: "Hardware", alt: "visual diet tracker", img: "/visual_diet_tracker.png", link: "https://drive.google.com/file/d/1pYqdof5k6dPHiXI2xgudb8Sxv0AiDU0j/view?usp=drive_link"},
+        {id:1, category: "Hardware", alt: "visual diet tracker", img: "/visual_diet_tracker.jpg", link: "https://drive.google.com/file/d/1pYqdof5k6dPHiXI2xgudb8Sxv0AiDU0j/view?usp=drive_link"},
         {id:2, category: "Hardware", alt: "dragon slayer", img: "/dragon_slayer.png", link: "https://drive.google.com/file/d/1WGpYwqvyskQs4KaZ7KDyhMlBvulqCyEB/view?usp=drive_link"},
         {id:3, category: "Hardware", alt: "interactive lamp", img: "/interactive_lamp.png", link: "https://drive.google.com/file/d/1cwS4NTWL1y6UdeUrmgpy0Q85i6eL37wU/view?usp=drive_link"},
         {id:4, category: "Software", alt: "aarhus kommune", img: "/aarhus_kommune.png", link: "https://drive.google.com/file/d/1pt7lDjj0Ujz1Ey8RvTM8dxw1dq-VnZ_x/view?usp=drive_link"},
