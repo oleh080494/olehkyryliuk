@@ -11,6 +11,15 @@ function Skills() {
       "Built responsive web apps using React and Firebase, connecting frontends to backends through REST APIs either alone or in a small group",
     ],
     [
+      "Java testing & software development",
+      "Applied Test-Driven Development (TDD), black-box testing, variability management, test doubles, and unit/integration testing using JUnit. Worked with clean code principles, refactoring, distribution & broker patterns, and applied common design patterns (Abstract Factory, Adapter, Decorator, Facade, Proxy, State, Strategy, Observer).",
+    ],
+    [
+      "JavaScript testing",
+      "Independently explored and practiced automated testing using Jest and Vitest. Developed a strong understanding of unit and integration testing principles and best practices to ensure software quality and reliability.",
+    ],
+
+    [
       "User-centered design methods & usability testing",
       "Applied design thinking, conducted user testing, and iteratively improved interfaces based on feedback.",
     ],
