@@ -18,6 +18,26 @@ function Skills() {
       "JavaScript testing",
       "Independently explored and practiced automated testing using Jest and Vitest. Developed a strong understanding of unit and integration testing principles and best practices to ensure software quality and reliability.",
     ],
+    [
+      "Arduino, sensors, actuators, and physical computing",
+      "Created interactive prototypes combining sensors and actuators with Arduino microcontrollers.",
+    ],
+    [
+      "C, C++",
+      "C and C++ were used for programming Arduino to the projects at the university.",
+    ],
+    [
+      "3D modeling & rapid prototyping",
+      "Designed and fabricated physical components using CAD tools and 3D printing for fast iteration.",
+    ],
+    [
+      "Java",
+      "Used Java and its most common patterns (Abstract Factory, Adapter, Decorator, Facade, Proxy, State, Strategy, Observer) for writing a simple game and used JUnit testing to ensure stable and correct functioning of the system.",
+    ],
+    [
+      "Python",
+      "Used Python for developing a webapplication as backend and for developing an embedded system (Visual Diet Tracker)",
+    ],
 
     [
       "User-centered design methods & usability testing",
@@ -47,22 +67,7 @@ function Skills() {
       "Agile project management & iterative prototyping",
       "Worked in sprints with regular stand-ups, retrospectives, and continuous feedback cycles.",
     ],
-    [
-      "Arduino, sensors, actuators, and physical computing",
-      "Created interactive prototypes combining sensors and actuators with Arduino microcontrollers.",
-    ],
-    [
-      "C, C++",
-      "C and C++ were used for programming Arduino to the projects at the university.",
-    ],
-    [
-      "3D modeling & rapid prototyping",
-      "Designed and fabricated physical components using CAD tools and 3D printing for fast iteration.",
-    ],
-    [
-      "Java",
-      "Used Java and its most common patterns (Abstract Factory, Adapter, Decorator, Facade, Proxy, State, Strategy, Observer) for writing a simple game and used JUnit testing to ensure stable and correct functioning of the system.",
-    ],
+
     [
       "Distributed systems, algorithms, and data structures",
       "Studied and implemented distributed algorithms, focusing on efficiency, scalability, and fault tolerance.",

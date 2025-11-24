@@ -61,7 +61,7 @@ function App() {
         <div className="flex justify-center mt-2 md:mt-6">
           <div className="bg-[#393939] rounded-3xl px-4 py-2 shadow-xl">
             <h3 className="text-white text-sm sm:text-base md:text-lg">
-              Web Developer
+              Software Developer
             </h3>
           </div>
         </div>
