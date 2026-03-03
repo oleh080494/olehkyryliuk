@@ -22,7 +22,7 @@ function Contact() {
     // Add a marker
     L.marker([56.09229009371534, 9.79123014038956], { icon: myIcon })
       .addTo(map)
-      .bindPopup("Home sweat home!!!  Kongevellen 19, 8240 Risskov");
+      .bindPopup("Home sweat home!!!  Rugaardsparken 42, 8680 Ry");
   }, []);
 
   return (
