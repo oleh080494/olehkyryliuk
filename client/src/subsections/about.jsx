@@ -43,7 +43,7 @@ function About() {
 
       {/* Cards wrapper */}
       <div className="flex flex-col md:flex-row gap-4">
-        {/* Web Development */}
+        {/* Software Development */}
         <div className="flex flex-col md:flex-row items-center w-full justify-center h-auto md:h-[15vh] bg-[#2d2d2d] rounded-2xl shadow-xl p-4">
           <div className="h-15 w-15 flex items-center justify-center rounded-md bg-[#24252e] mb-3 md:mb-0">
             <img
@@ -53,10 +53,10 @@ function About() {
             />
           </div>
           <div className="flex flex-col md:ml-4 text-center md:text-left">
-            <div className="text-[#FFFFFF] text-sm">Exploring Electronics</div>
+            <div className="text-[#FFFFFF] text-sm">Software Development</div>
             <div className="text-[#6c6c6b] text-base">
-              Building understanding
-              <br /> of different components
+              Writing clean, maintainable
+              <br /> and scalable code
             </div>
           </div>
         </div>
@@ -91,8 +91,8 @@ function About() {
           <div className="flex flex-col md:ml-4 text-center md:text-left">
             <div className="text-[#FFFFFF] text-sm">Web Development</div>
             <div className="text-[#6c6c6b] text-base">
-              High quality development of
-              <br /> sites websites
+              Development of
+              <br /> modern websites
             </div>
           </div>
         </div>

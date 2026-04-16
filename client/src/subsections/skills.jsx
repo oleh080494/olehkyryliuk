@@ -19,16 +19,8 @@ function Skills() {
       "Independently explored and practiced automated testing using Jest and Vitest. Developed a strong understanding of unit and integration testing principles and best practices to ensure software quality and reliability.",
     ],
     [
-      "Arduino, sensors, actuators, and physical computing",
-      "Created interactive prototypes combining sensors and actuators with Arduino microcontrollers.",
-    ],
-    [
       "C, C++",
-      "C and C++ were used for programming Arduino to the projects at the university.",
-    ],
-    [
-      "3D modeling & rapid prototyping",
-      "Designed and fabricated physical components using CAD tools and 3D printing for fast iteration.",
+      "C and C++ were used for programming Embedded Systems to the projects at the university.",
     ],
     [
       "Java",
@@ -48,7 +40,7 @@ function Skills() {
       "Designed interactive prototypes and user interfaces using Figma and Adobe tools.",
     ],
     [
-      "Database design and management (mySQL, NoSQL, Firebase)",
+      "Database design and management (mySQL, PostgreSQL, PocketBase, Firebase)",
       "Designed relational and non-relational databases, handled queries, and managed data synchronization in Firebase.",
     ],
     [
@@ -62,23 +54,6 @@ function Skills() {
     [
       "Docker containerization and deployment on a Hetzner VPS",
       "Deployed full-stack applications using Docker containers hosted on a Hetzner virtual private server.",
-    ],
-    [
-      "Agile project management & iterative prototyping",
-      "Worked in sprints with regular stand-ups, retrospectives, and continuous feedback cycles.",
-    ],
-
-    [
-      "Distributed systems, algorithms, and data structures",
-      "Studied and implemented distributed algorithms, focusing on efficiency, scalability, and fault tolerance.",
-    ],
-    [
-      "Client-server architecture, peer-to-peer networks",
-      "Developed systems communicating through both centralized and decentralized network topologies.",
-    ],
-    [
-      "Software security (RSA, AES, cryptography basics)",
-      "Implemented encryption, decryption, and digital signatures to secure data in Go-based projects.",
     ],
   ];
 

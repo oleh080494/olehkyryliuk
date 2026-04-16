@@ -6,21 +6,21 @@ function Portfolio() {
   const projects = [
     {
       id: 1,
-      category: "Hardware",
+      category: "Embedded Systems",
       alt: "visual diet tracker",
       img: "/visual_diet_tracker.jpg",
       link: "https://drive.google.com/file/d/1pYqdof5k6dPHiXI2xgudb8Sxv0AiDU0j/view?usp=drive_link",
     },
     {
       id: 2,
-      category: "Hardware",
+      category: "Embedded Systems",
       alt: "dragon slayer",
       img: "/dragon_slayer.png",
       link: "https://drive.google.com/file/d/1WGpYwqvyskQs4KaZ7KDyhMlBvulqCyEB/view?usp=drive_link",
     },
     {
       id: 3,
-      category: "Hardware",
+      category: "Embedded Systems",
       alt: "interactive lamp",
       img: "/interactive_lamp.png",
       link: "https://drive.google.com/file/d/1cwS4NTWL1y6UdeUrmgpy0Q85i6eL37wU/view?usp=drive_link",
@@ -57,7 +57,7 @@ function Portfolio() {
     <div className="p-4">
       {/* Tabs */}
       <div className="flex flex-row gap-4 justify-start mb-6 flex-wrap">
-        {["All", "Hardware", "Software"].map((tab) => (
+        {["All", "Embedded Systems", "Software"].map((tab) => (
           <div
             key={tab}
             onClick={() => setActiveTab(tab)}
